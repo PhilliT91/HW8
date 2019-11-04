@@ -8,19 +8,20 @@ public class Main {
         test.add("123");
         test.add("181");
         test.add("191");
-        test.add("121");
-        test.add("161");
-        test.add("128");
-        test.add("111");
-        test.add("191");
-        test.add("171");
-        test.add("123");
 
-test.display();
-        System.out.println(test.getSize());
-test.delete("123");
+        Collection test2=new Collection();
+        test2.add("123");
+        test2.add("191");
+        test2.add("191");
+test.add("1");
+test.indexOf("666");
 
-test.display();
-        System.out.println(test.getSize());
+
+        System.out.println(test2.equals(test));
+
+        test2.clear();
+        test2.display();
+
+
     }
 }
