@@ -14,7 +14,7 @@ public class Main {
         test2.add("191");
         test2.add("191");
 test.add("1");
-test.indexOf("666");
+        System.out.println(test.indexOf("181"));
 
 
         System.out.println(test2.equals(test));
