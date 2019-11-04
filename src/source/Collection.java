@@ -1,7 +1,7 @@
 package source;
 
 public class Collection {
-    String[] arr;
+   private String[] arr;
 
     int capacity;
     int size=0;
@@ -18,17 +18,18 @@ Collection() {
     int i=0;
     for(;i<capacity;i++){
         if(arr[i]!=null){
-
+            continue;
         }
-        break;
-    }
-    return i;
 
+        return i;
+    }
+
+return capacity;
     }
 
 
     void add(String str){
-    if(this.getSize()==capacity-1){
+    if(size==capacity-1){
         capacity+=20;
         String[] temp=new String[capacity];
         for(int i=0;i<capacity;i++){
@@ -36,13 +37,44 @@ Collection() {
 
         }
 
-        arr=temp;
-    }
-arr[thi]
-
-
 
     }
+
+    arr[size]=str;
+size++;
+
+    }
+
+    void delete(String str){
+        for(int i=0;i<size;i++){
+            if(arr[i]==str){
+                for(int j=i;j<size-1;j++){
+                    arr[j]=arr[j+1];
+                }
+                arr[size-1]=null;
+                size--;
+            }
+        }
+
+    }
+String get(int index){
+        return arr[index];
+
+
+}
+
+
+
+    void display(){
+        for(int i=0;i<size;i++) {
+            System.out.print(this.get(i) + ", ");
+        }
+        System.out.println("");
+
+
+    }
+
+
 
 
 
