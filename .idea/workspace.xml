@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92e73a21-a4b6-41d8-b9f9-033679f5f2f1" name="Default Changelist" comment="">
+    <list default="true" id="92e73a21-a4b6-41d8-b9f9-033679f5f2f1" name="Default Changelist" comment="seems final stage">
       <change afterPath="$PROJECT_DIR$/../Hillel_l2_t3/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Hillel_l2_t3/src/source/Deposit.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Hillel_l3_t1/src/source/TaskMethod.java" afterDir="false" />
@@ -27,10 +27,7 @@
       <change afterPath="$PROJECT_DIR$/../hillel_l4/src/source/Test.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../hillel_l4/src/source/ValObj.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/java.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW_7/source/Collection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW_7/source/Collection.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HW_7/source/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW_7/source/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/source/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/Collection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/source/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,25 +39,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/source/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="153">
+              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/source/Collection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="730">
-              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="206">
+              <caret line="126" column="13" lean-forward="true" selection-start-line="126" selection-start-column="13" selection-end-line="126" selection-end-column="13" />
               <folding>
                 <element signature="method#display#0;class#Collection#0" />
                 <element signature="method#equals#0;class#Collection#0" />
                 <element signature="method#clear#0;class#Collection#0" />
-                <element signature="method#indexOf#0;class#Collection#0" />
               </folding>
             </state>
           </provider>
@@ -81,6 +77,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Roger &lt;stepan.stepanovich.16@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -129,6 +130,9 @@
         </subPane>
       </pane>
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -181,6 +185,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18456376" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -204,6 +209,14 @@
       <window_info anchor="right" id="Palette&#9;" order="4" />
     </layout>
   </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="additional commit" />
+    <MESSAGE value="seems final stage" />
+    <option name="LAST_COMMIT_MESSAGE" value="seems final stage" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -213,23 +226,22 @@
     <entry file="file://$PROJECT_DIR$/HW_7.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/source/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/source/Collection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="206">
+          <caret line="126" column="13" lean-forward="true" selection-start-line="126" selection-start-column="13" selection-end-line="126" selection-end-column="13" />
           <folding>
             <element signature="method#display#0;class#Collection#0" />
             <element signature="method#equals#0;class#Collection#0" />
             <element signature="method#clear#0;class#Collection#0" />
-            <element signature="method#indexOf#0;class#Collection#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/source/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
