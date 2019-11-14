@@ -1,10 +1,10 @@
 package source;
 
-public class Collection {
+public class Collection implements CustomCollection {
     private String[] arr;
 
-    int capacity;
-    private int size = 0;
+    private int capacity;
+    private int lenght = 0;
 
     Collection() {
         capacity = 20;
@@ -16,7 +16,7 @@ public class Collection {
         arr = new String[capacity];
     }
 
-    public int getSize() {
+    public int size() {
         int i = 0;
         for (; i < capacity; i++) {
             if (arr[i] != null) {
@@ -30,44 +30,87 @@ public class Collection {
     }
 
 
-    void add(String str) {
-        if (size == capacity - 1) {
-            capacity += 20;
+    public boolean add(String str) {
+        if (lenght == capacity - 1) {
+            capacity *= 2;
             String[] temp = new String[capacity];
-            for (int i = 0; i < capacity; i++) {
+            for (int i = 0; i < lenght; i++){
+                temp[i] = arr[i];
+            }
+
+            arr = temp;
+        }
+
+        arr[lenght] = str;
+        lenght++;
+        return true;
+    }
+
+    public boolean addByOne(String str) {
+        if (lenght == capacity - 1) {
+            capacity += 3;
+            String[] temp = new String[capacity];
+            for (int i = 0; i < lenght; i++) {
                 temp[i] = arr[i];
 
             }
 
-
+            arr = temp;
         }
 
-        arr[size] = str;
-        size++;
-
+        arr[lenght] = str;
+        lenght++;
+        return true;
     }
 
-    void delete(String str) {
-        for (int i = 0; i < size; i++) {
-            if (arr[i] == str) {
-                for (int j = i; j < size - 1; j++) {
-                    arr[j] = arr[j + 1];
-                }
-                arr[size - 1] = null;
-                size--;
+
+
+
+
+    public boolean delete(int index) {
+        if (index >= lenght) {
+            return false;
+        }
+        for (int i = index; i < lenght - 1; i++) {
+            arr[i] = arr[i + 1];
+        }
+        arr[lenght - 1] = null;
+        lenght--;
+        return true;
+    }
+
+
+    public boolean delete(String str) {
+        if (!this.contains(str)) {
+            return false;
+        }
+
+        for (int i = 0; i < lenght; i++) {
+            if (arr[i].equals(str)) {
+                delete(i);
             }
+            arr[lenght - 1] = null;
+            lenght--;
         }
+        return true;
+
 
     }
 
-    String get(int index) {
+
+    public String get(int index) {
+        if (index >= lenght) {
+            return "";
+        }
+
+
         return arr[index];
 
 
     }
 
-    boolean contains(String str) {
-        for (int i = 0; i < size; i++) {
+    public boolean contains(String str) {
+        for (int i = 0; i < lenght; i++) {
             if (arr[i].equals(str)) {
                 return true;
             }
@@ -79,7 +122,7 @@ public class Collection {
 
 
     void display() {
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < lenght; i++) {
             System.out.print(arr[i] + ", ");
         }
         System.out.println("");
@@ -87,53 +130,81 @@ public class Collection {
 
     }
 
-    boolean equals(Collection eColl) {
-        int counter = 0;
-        if (this.size > eColl.size) {
-            counter = this.size;
-        } else {
-            counter = eColl.size;
-        }
+    public boolean compare(Collection eColl) {
+        if(this==eColl)return true;
+
+        if (this.size() != eColl.size()) return false;
 
 
-        if (this == eColl) {
-            return true;
-        } else {
 
-            for (int i = 0; i < counter; i++) {
-                if (this.arr[i].equals(eColl.arr[i]) == false) {
+            for (int i = 0; i < lenght; i++) {
+                if (!this.get(i).equals(eColl.get(i))) {
                     return false;
                 }
             }
             return true;
 
 
-        }
+
 
     }
 
-    void clear(){
-        for(int i=0;i<size;i++)
-        {
-            this.arr[i]=null;
+    public boolean clear() {
+        for (int i = 0; i <lenght; i++) {
+            this.arr[i] = null;
+
         }
-        size=0;
+        lenght=1;
+        return true;
     }
 
-    int indexOf(String str){
-        for(int i=0; i<size;i++){
+    int indexOf(String str) {
+        for (int i = 0; i < lenght; i++) {
             if (arr[i].equals(str)) {
                 return i;
             }
-            }
+        }
         System.out.println("no matches");
         return -1;
 
-        }
+    }
 
+
+    public boolean addAll(String[] strArr) {
+        for (int i = 0; i < strArr.length; i++) {
+            this.add(strArr[i]);
+        }
+        return true;
 
 
     }
+
+    public boolean addAll(Collection strColl) {
+        for (int i = 0; i < strColl.size(); i++) {
+            this.add(strColl.get(i));
+        }
+        return true;
+    }
+
+
+    public boolean trim() {
+        String[] temp = new String[lenght];
+        for (int i = 0; i < lenght; i++) {
+            temp[i] = arr[i];
+
+        }
+        this.arr = temp;
+        capacity=lenght+1;
+        return true;
+
+
+    }
+
+
+
+
+
+}
 
 
 
